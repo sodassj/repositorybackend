@@ -7,7 +7,7 @@ function requestController(){
 
 const server = http.createServer(requestController)
 
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 4000;
 
 server.listen(PORT, function (){
   console.log("Aplicación corriendo en: " + PORT)
